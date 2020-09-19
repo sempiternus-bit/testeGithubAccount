@@ -3,6 +3,7 @@
 	margin:0;
 	font-family:Arial;
 }
+.clear{clear: both;}
 		/*Se lembrar de organizar o seu codigo por sessoes
 
 		cabecalho*/
@@ -19,12 +20,12 @@ header{
 
 		/*sessao principal*/	
 
-.sessao-principal{
+.menus-header{
 	height:80%;
 	position:relative;
 	text-align:justify;
 }
-.sessao-principal > nav ul li{
+.menus-header > nav > h3{
 	background: #ff9102;
 	color:#fff;
 	text-align: center;
@@ -42,16 +43,16 @@ header{
 
 
 
-.sessao-principal > nav ul .menu{
+.menus-header > nav ul .menu{
 	display:none;
 }
-.sessao-principal > nav ul li:hover{
+.menus-header > nav ul li:hover{
 	background:#c88606;
 }
-.sessao-principal > nav ul li:hover >ul{
+.menus-header > nav ul li:hover >ul{
 	display:block;
 }
-.sessao-principal > nav a{
+.menus-header > nav a{
 	color:#fff;
 	text-decoration: none;
 }
@@ -59,11 +60,11 @@ header{
 
 
 
-.sessao-principal img{
+.menus-header img{
 	width:30%;
 	margin-left:35%;
 }
-.sessao-principal h3{
+.menus-header h3{
 	margin-top:6%;
 	margin-bottom: 1%;
 }
@@ -118,16 +119,16 @@ footer img{
 	#c{
 		padding-bottom: 2%;
 	}
-	.sessao-principal{
+	.menus-header{
 		height:150%;
 		margin-bottom: -150;
 		text-align: justify;
 	}
-	.sessao-principal img{
+	.menus-header img{
 		width:70%;
 		margin-left: 18%;
 	}
-	.sessao-principal h3{
+	.menus-header h3{
 		margin-bottom: 2%;
 	}
 	.painel-google{
