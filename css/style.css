@@ -105,66 +105,64 @@ section.painel p{
 footer{
 	text-align:center;
 	color:#fff;
+	width: 100%;
 	background:#ff9102;
-	height:15%;
-	padding-top:1%; 
+	padding-top:10px; 
 	position: absolute;
 	bottom: 0;
 }
 footer p{
+	padding: 10px;
 	margin-right: 4%;
-	padding-top:1%;
 	text-transform: uppercase;
 	font-weight: lighter;
 }
 footer img{
-	width:2%;
-	margin-left: 1%;
+	width:30px;
 }
 
 		/*responsividade*/
 
-/*@media screen and (max-width: 768px){
-	#c{
-		padding-bottom: 2%;
+@media screen and (max-width: 1024px){
+	main{
+		text-align: center;
 	}
-	.menus-header{
-		height:150%;
-		margin-bottom: -150;
-		text-align: justify;
+	main > section.painel{
+		float: none;
+		width: 80%;
+		margin: 20px 0;
+		display: inline-block;
+		text-align: center;
 	}
-	.menus-header img{
-		width:70%;
-		margin-left: 18%;
+	section.painel h3{
+		text-align: center;
 	}
-	.menus-header h3{
-		margin-bottom: 2%;
+	section.painel p{
+		font-size: 23px;
 	}
-	.painel-google{
-		width:80%;
-		left:8px;
-		height:50%;
-		top:20%;
-		padding: 4%;
-
-	}
-	.painel-microsoft{
-		width:80%;
-		top:80%;
-		left:8px;
-		height:50%;
-		padding: 4%;
-
-	}
+}
+@media screen and (max-width: 900px){
 	footer{
-		margin-top:130%;
-		font-size:110%;
-		height: 18%;
+		position: static;
 	}
-	footer img{
-		width: 5%;
-		margin-left:2%;
+	section.painel{
+		padding-top: 0px;	
+	}
+	section.painel img{
+		float: none;
+		display: inline-block;
+		max-width: 50%;
+	}
+}
+@media screen and (max-width: 900px){
+	main > section.painel{
+		width: 95%;
 
 	}
-
-}*/
+	section.painel img{
+		max-width: 80%;
+	}
+	section.painel p{
+		font-size: 18px;
+	}
+}
