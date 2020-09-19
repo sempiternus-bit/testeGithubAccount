@@ -3,7 +3,11 @@
 	margin:0;
 	font-family:Arial;
 }
-#c{
+		/*Se lembrar de organizar o seu codigo por sessoes
+
+		cabecalho*/
+
+header{
 	background:#ff9102;
 	text-align:center;
 	color:#fff;
@@ -12,48 +16,15 @@
 	font-size:120%;
 	border-bottom: solid 1px #fff;
 }
-#d{
+
+		/*sessao principal*/	
+
+.sessao-principal{
 	height:80%;
 	position:relative;
 	text-align:justify;
 }
-#d img{
-	width:30%;
-	margin-left:35%;
-	
-
-}
-#d h3{
-	margin-top:6%;
-	margin-bottom: 1%;
-}
-#f1{
-	width:45%;
-	border:solid 4px rgba(0, 0, 0, .5);
-	display:block;
-	position:absolute;
-	top:30%;
-	left:2%;
-	height:60%;
-	border-radius:0 10% 10% 10%;
-	padding:1%;
-}
-
-
-#f2{
-	width:45%;
-	border:solid 4px rgba(0, 0, 0, .5);
-	display:block;
-	position:absolute;
-	top:30%;
-	left:52%;
-	height:60%;
-	border-radius:0 10% 10% 10%;
-	padding:1%;
-
-}
-
-#n1 ul li{
+.sessao-principal > nav ul li{
 	background: #ff9102;
 	color:#fff;
 	text-align: center;
@@ -66,19 +37,64 @@
 	transition:background 1s; 
 
 }
-#n1 ul ul{
+
+
+
+
+
+.sessao-principal > nav ul .menu{
 	display:none;
 }
-#n1 ul li:hover{
+.sessao-principal > nav ul li:hover{
 	background:#c88606;
 }
-#n1 ul li:hover >ul{
+.sessao-principal > nav ul li:hover >ul{
 	display:block;
 }
-#n1 a{
+.sessao-principal > nav a{
 	color:#fff;
 	text-decoration: none;
 }
+
+
+
+
+.sessao-principal img{
+	width:30%;
+	margin-left:35%;
+}
+.sessao-principal h3{
+	margin-top:6%;
+	margin-bottom: 1%;
+}
+.painel-google{
+	width:45%;
+	border:solid 4px rgba(0, 0, 0, .5);
+	display:block;
+	position:absolute;
+	top:30%;
+	left:2%;
+	height:60%;
+	border-radius:0 10% 10% 10%;
+	padding:1%;
+}
+.painel-microsoft{
+	width:45%;
+	border:solid 4px rgba(0, 0, 0, .5);
+	display:block;
+	position:absolute;
+	top:30%;
+	left:52%;
+	height:60%;
+	border-radius:0 10% 10% 10%;
+	padding:1%;
+
+}
+
+
+
+		/*footer*/
+
 footer{
 	text-align:center;
 	color:#fff;
@@ -88,34 +104,33 @@ footer{
 	margin-bottom: 0: 
 }
 footer p{
-	
+	margin-right: 4%;
 	padding-top:1%;
 }
 footer img{
 	width:2%;
 	margin-left: 1%;
+}
 
-}
-#fp{
-	margin-right: 4%;
-}
+		/*responsividade*/
+
 @media screen and (max-width: 768px){
 	#c{
 		padding-bottom: 2%;
 	}
-	#d{
+	.sessao-principal{
 		height:150%;
 		margin-bottom: -150;
 		text-align: justify;
 	}
-	#d img{
+	.sessao-principal img{
 		width:70%;
 		margin-left: 18%;
 	}
-	#d h3{
+	.sessao-principal h3{
 		margin-bottom: 2%;
 	}
-	#f1{
+	.painel-google{
 		width:80%;
 		left:8px;
 		height:50%;
@@ -123,7 +138,7 @@ footer img{
 		padding: 4%;
 
 	}
-	#f2{
+	.painel-microsoft{
 		width:80%;
 		top:80%;
 		left:8px;
