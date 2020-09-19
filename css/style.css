@@ -2,8 +2,10 @@
 	padding:0;
 	margin:0;
 	font-family:Arial;
+	box-sizing: border-box;
 }
 .clear{clear: both;}
+a{text-decoration: none;color:inherit; }
 		/*Se lembrar de organizar o seu codigo por sessoes
 
 		cabecalho*/
@@ -12,45 +14,48 @@ header{
 	background:#ff9102;
 	text-align:center;
 	color:#fff;
-	height:8%;
 	padding-top:2%;
-	font-size:120%;
+	font-weight: lighter;
 	border-bottom: solid 1px #fff;
 }
-
-		/*sessao principal*/	
-
-.menus-header{
-	height:80%;
-	position:relative;
-	text-align:justify;
+header > h1{
+	font-size: 32px;
+}
+header.menus-header{
+	background-color: #ff9102;
+}
+.menus-header > nav{
+	width: 50%;
+	float: left;
+	text-align: center;
+	padding: 20px 0;
 }
 .menus-header > nav > h3{
 	background: #ff9102;
 	color:#fff;
-	text-align: center;
-	width:50%;
-	height:40px;
-	line-height: 40px;
-	float:left;
-	display:inline-block;  
-	font-size: 110%;
-	transition:background 1s; 
+	font-size: 22px;
+	display:inline-block; 
+	transition:background 1s;
+	cursor: pointer; 
+	padding: 5px 0;
 
 }
-
-
-
-
-
-.menus-header > nav ul .menu{
+.menus-header > nav ul.menu{
 	display:none;
+	list-style: none;
+}
+.menus-header > nav ul li{
+	width: 50%;
+	border: 1px solid white;
+	display: inline-block;
+}
+.menus-header > nav ul li a{
+	padding: 5px 20%;
+	font-size: 16px;
+	line-height: 30px;
 }
 .menus-header > nav ul li:hover{
 	background:#c88606;
-}
-.menus-header > nav ul li:hover >ul{
-	display:block;
 }
 .menus-header > nav a{
 	color:#fff;
@@ -58,41 +63,42 @@ header{
 }
 
 
-
-
-.menus-header img{
-	width:30%;
-	margin-left:35%;
+		/*Principal*/
+main{
+	padding: 20px 2%;
 }
-.menus-header h3{
-	margin-top:6%;
-	margin-bottom: 1%;
-}
-.painel-google{
-	width:45%;
-	border:solid 4px rgba(0, 0, 0, .5);
-	display:block;
-	position:absolute;
-	top:30%;
-	left:2%;
-	height:60%;
+section.painel{
+	width:49%;
+	border:solid 4px rgba(0, 0, 0, 0.5);
 	border-radius:0 10% 10% 10%;
-	padding:1%;
+	padding: 1%;
+	margin: 10vh 0;
+	text-align: justify;
+	min-height: 250px; 
+	padding-top: 40px;
 }
-.painel-microsoft{
-	width:45%;
-	border:solid 4px rgba(0, 0, 0, .5);
-	display:block;
-	position:absolute;
-	top:30%;
-	left:52%;
-	height:60%;
-	border-radius:0 10% 10% 10%;
-	padding:1%;
-
+.google{
+	float: left;
 }
-
-
+.google p,.google h3{
+	padding-top: 10px;
+	line-height: 120%;
+}
+.micro{
+	float: right;
+}
+section.painel img{
+	max-width:30%;
+	float: right;
+}
+section.painel h3{
+	font-size: 24px;
+	padding-bottom: 10px; 
+}
+section.painel p{
+	font-size: 18px;
+	padding-bottom: 10px; 
+}
 
 		/*footer*/
 
@@ -101,12 +107,15 @@ footer{
 	color:#fff;
 	background:#ff9102;
 	height:15%;
-	padding-top:1%;
-	margin-bottom: 0: 
+	padding-top:1%; 
+	position: absolute;
+	bottom: 0;
 }
 footer p{
 	margin-right: 4%;
 	padding-top:1%;
+	text-transform: uppercase;
+	font-weight: lighter;
 }
 footer img{
 	width:2%;
@@ -115,7 +124,7 @@ footer img{
 
 		/*responsividade*/
 
-@media screen and (max-width: 768px){
+/*@media screen and (max-width: 768px){
 	#c{
 		padding-bottom: 2%;
 	}
@@ -158,4 +167,4 @@ footer img{
 
 	}
 
-}
+}*/
