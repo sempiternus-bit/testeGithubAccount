@@ -1,0 +1,168 @@
+*{
+	padding:0;
+	margin:0;
+	font-family:Arial;
+	box-sizing: border-box;
+}
+.clear{clear: both;}
+a{text-decoration: none;color:inherit; }
+		/*Se lembrar de organizar o seu codigo por sessoes
+
+		cabecalho*/
+
+header{
+	background:#ff9102;
+	text-align:center;
+	color:#fff;
+	padding-top:2%;
+	font-weight: lighter;
+	border-bottom: solid 1px #fff;
+}
+header > h1{
+	font-size: 32px;
+}
+header.menus-header{
+	background-color: #ff9102;
+}
+.menus-header > nav{
+	width: 50%;
+	float: left;
+	text-align: center;
+	padding: 20px 0;
+}
+.menus-header > nav > h3{
+	background: #ff9102;
+	color:#fff;
+	font-size: 22px;
+	display:inline-block; 
+	transition:background 1s;
+	cursor: pointer; 
+	padding: 5px 0;
+
+}
+.menus-header > nav ul.menu{
+	display:none;
+	list-style: none;
+}
+.menus-header > nav ul li{
+	width: 50%;
+	border: 1px solid white;
+	display: inline-block;
+}
+.menus-header > nav ul li a{
+	padding: 5px 20%;
+	font-size: 16px;
+	line-height: 30px;
+}
+.menus-header > nav ul li:hover{
+	background:#c88606;
+}
+.menus-header > nav a{
+	color:#fff;
+	text-decoration: none;
+}
+
+
+		/*Principal*/
+main{
+	padding: 20px 2%;
+}
+section.painel{
+	width:49%;
+	border:solid 4px rgba(0, 0, 0, 0.5);
+	border-radius:0 10% 10% 10%;
+	padding: 1%;
+	margin: 10vh 0;
+	text-align: justify;
+	min-height: 250px; 
+	padding-top: 40px;
+}
+.google{
+	float: left;
+}
+.google p,.google h3{
+	padding-top: 10px;
+	line-height: 120%;
+}
+.micro{
+	float: right;
+}
+section.painel img{
+	max-width:30%;
+	float: right;
+}
+section.painel h3{
+	font-size: 24px;
+	padding-bottom: 10px; 
+}
+section.painel p{
+	font-size: 18px;
+	padding-bottom: 10px; 
+}
+
+		/*footer*/
+
+footer{
+	text-align:center;
+	color:#fff;
+	width: 100%;
+	background:#ff9102;
+	padding-top:10px; 
+	position: absolute;
+	bottom: 0;
+}
+footer p{
+	padding: 10px;
+	margin-right: 4%;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+footer img{
+	width:30px;
+}
+
+		/*responsividade*/
+
+@media screen and (max-width: 1024px){
+	main{
+		text-align: center;
+	}
+	main > section.painel{
+		float: none;
+		width: 80%;
+		margin: 20px 0;
+		display: inline-block;
+		text-align: center;
+	}
+	section.painel h3{
+		text-align: center;
+	}
+	section.painel p{
+		font-size: 23px;
+	}
+}
+@media screen and (max-width: 900px){
+	footer{
+		position: static;
+	}
+	section.painel{
+		padding-top: 0px;	
+	}
+	section.painel img{
+		float: none;
+		display: inline-block;
+		max-width: 50%;
+	}
+}
+@media screen and (max-width: 900px){
+	main > section.painel{
+		width: 95%;
+
+	}
+	section.painel img{
+		max-width: 80%;
+	}
+	section.painel p{
+		font-size: 18px;
+	}
+}
